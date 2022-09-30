@@ -1,0 +1,31 @@
+<div class="page">
+    <div class="login">
+        <div class="user-profile">
+        <i class="fa-solid fa-user"></i>
+        </div>
+        <form>
+            <div class="input-top">
+                <div class="input-group">
+                    <span class="fas fa-user-alt input-group-text" style="font-size:36px" ></span>
+                  <input type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="user-name" [(ngModel)]="loginDetails['username']">
+                </div>
+                <br>     
+                <div class="input-group">
+                    <span class="fas fa-lock input-group-text" style="font-size:36px"></span>
+                  <input type="password" class="form-control" placeholder="Enter password" aria-label="Username" aria-describedby="basic-addon1" name="user-password" [(ngModel)]="loginDetails['password']">
+                </div>
+            </div>
+            <br>
+            <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <span>Show password</span> &nbsp;  &nbsp;  &nbsp;  -->
+            <div class="form-check">
+                <input type="checkbox" name="check-me" class="form-check-input" id="dropdownCheck" [(ngModel)]="loginDetails['dropdownCheck']">
+                <label class="form-check-label" for="dropdownCheck">
+                  Remember me
+                 &nbsp;   &nbsp;   &nbsp;   &nbsp; <a href="">forget password?</a>  <br><br>
+                </label>
+              </div>
+            <button (click)="getValue()" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>

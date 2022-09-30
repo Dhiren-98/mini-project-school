@@ -1,0 +1,37 @@
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4d3ed4, #ddd4ac, #19cec5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: auto;
+}
+.login{
+    background-color: #cc61e7e8;
+    height: 430px;
+    width: 330px;
+    padding: 90px 20px;
+    box-shadow: 2px 5px #e299dc;
+    border-radius: 10px;
+}
+button{
+    margin-left: 108px;
+}
+.user-profile{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #ddd4ac;
+    position: relative;
+    bottom: 50px;
+    margin-left: 105px;
+}
+.fa-user{
+    font-size: 25px;
+    color: rgb(230, 58, 6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
